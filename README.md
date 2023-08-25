@@ -23,7 +23,7 @@ This project delves into the intricacies of using reinforcement learning to guid
 
 **Reward Function Visualization**
 
-<img src="assets\Images\RewardFunctionscaled9.jpg" width="200">
+<img src="assets\Images\RewardFunctionscaled9.jpg" width="400">
 
 ## Repository Contents
 
