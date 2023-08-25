@@ -4,7 +4,11 @@
 
 This project leverages reinforcement learning (RL) to cultivate flocking behaviour in drones, aiming to organize groups of UAVs through biologically inspired behavioural models. The primary focus is on simulating a multi-agent model and constructing a loss function to achieve emergent behaviour. The reward function's scalability with N agents is also explored. The actor-critic model is employed due to its capability to handle continuous action and observation states. The 2D environment is crafted by integrating potential field functions and boid flocking behavior. The agent steers drones using gains that enhance specific behaviours, training to maximize long-term cumulative rewards. The reward function is designed using variations of the exponential function to ensure flocking and arrival within a set number of steps. While flocking behaviour was successfully achieved and can be scaled, computational constraints posed limitations. Some drones occasionally prioritize flocking over reaching the destination, which is attributed to the reward function's design and certain simulation limitations. This research showcases the potential of reinforcement learning in multi-vehicle UAV applications. By transitioning the RL structure to a more fitting multi-agent particle environment, like those in the openAI database, the model can be applied at various scales with reduced computational demands.
 
-For a comprehensive overview, refer to the [dissertation document](https://github.com/oscell/Biologically-inspired-UAV/blob/main/assets/Documents/Biologically_inspired_UAV.pdf).
+<div align="center">
+
+:book: For a comprehensive overview, refer to the [dissertation document](https://github.com/oscell/Biologically-inspired-UAV/blob/main/assets/Documents/Biologically_inspired_UAV.pdf). :book:
+
+</div>
 
 ## Overview
 
@@ -24,16 +28,6 @@ This project delves into the intricacies of using reinforcement learning to guid
 **Reward Function Visualization**
 
 <img src="assets\Images\RewardFunctionscaled9.jpg" width="400">
-
-## Repository Contents
-
-- **[Simulation Environment](https://github.com/oscell/Biologically-inspired-UAV/tree/main/Simulation)**: The custom environment and the RL agent.
-  
-- **[Reward Function](https://github.com/oscell/Biologically-inspired-UAV/tree/main/RewardFunction)**: Details on the construction of the reward function and its variations.
-
-- **[Poster](https://github.com/oscell/Biologically-inspired-UAV/blob/main/Poster.pdf)**: A visual summary of the project.
-
-- **[Dissertation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/Dissertation.pdf)**: The primary document detailing the research, methodology, and findings.
 
 ## Setup & Installation
 
