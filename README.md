@@ -27,9 +27,14 @@ This project delves into the intricacies of using reinforcement learning to guid
 
 **Reward Function Visualization**
 
-<img src="assets\Images\RewardFunctionscaled9.jpg" width="400">
+<img src="" width="400">
+
+| Rewared Function | Trained agent |
+|:----------------:|:----------------:|
+| <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Images/TrainedAgent.PNG" width="300"> 
 
 ## Repository Contents
+
 [Matlab Simulation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/MATLAB): The custom environment and the RL agent.
 
 [Dissertation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/assets/Documents/Biologically_inspired_UAV.pdf): The primary document detailing the research, methodology, and findings.
