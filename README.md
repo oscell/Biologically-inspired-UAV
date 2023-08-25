@@ -44,7 +44,7 @@ The methods employed include:
 
 ### Trained Agent
 
-<img src="assets/Images/TrainedAgent.PNG" width="600">
+<img src="assets/Images/TrainedAgent.PNG" width="400">
 
 
 ## Repository Contents
