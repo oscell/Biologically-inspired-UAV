@@ -42,10 +42,26 @@ The methods employed include:
 
 </div>
 
+## Results
+
+The project's outcomes are:
+
+- The RL agent successfully learns the emergent flocking behavior of drones.
+- The significance of reward shaping in promoting desired behaviors is highlighted.
+- Certain challenges, such as some drones not reaching their destinations, underscore the need for further refinement of the reward function.
+
 ### Trained Agent
 
 <img src="assets/Images/TrainedAgent.PNG" width="400">
 
+## Future Work
+
+Potential avenues for future exploration:
+
+- Transition to a decentralized multi-agent approach to enhance the RL structure.
+- Enrich the environment dynamics and introduce obstacles.
+- Boost simulation speed using techniques like quad trees.
+- Refine the reward function to rectify any undesirable behaviors.
 
 ## Repository Contents
 
@@ -57,25 +73,6 @@ The methods employed include:
 ```bash
 git clone --recursive https://github.com/oscell/Biologically-inspired-UAV.git
 ```
-
-
-
-## Results
-
-The project's outcomes are:
-
-- The RL agent successfully learns the emergent flocking behavior of drones.
-- The significance of reward shaping in promoting desired behaviors is highlighted.
-- Certain challenges, such as some drones not reaching their destinations, underscore the need for further refinement of the reward function.
-
-## Future Work
-
-Potential avenues for future exploration:
-
-- Transition to a decentralized multi-agent approach to enhance the RL structure.
-- Enrich the environment dynamics and introduce obstacles.
-- Boost simulation speed using techniques like quad trees.
-- Refine the reward function to rectify any undesirable behaviors.
 
 ## Reference
 
