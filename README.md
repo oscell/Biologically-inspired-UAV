@@ -32,9 +32,12 @@ This project delves into the intricacies of using reinforcement learning to guid
 
 | Rewared Function | Trained agent |
 |:----------------:|:----------------:|
-| <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Images/TrainedAgent.PNG" width="300"> 
+| <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Biologically-Inspired-UAV-TEX/figures/EndByitself.jpg" width="300"> 
 
 </div>
+
+<img src="assets/Images/TrainedAgent.PNG" width="600">
+
 
 ## Repository Contents
 
