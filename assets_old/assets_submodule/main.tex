@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Final Year Project Report Bachelor of Engineering
+% LaTeX Template
+
+% Authors:
+% John Davies, John.Davies@glasgow.ac.uk
+% VAN DARKHOLME & Huang Yifan, 2288862h@student.gla.ac.uk 
+% Bernd Porr, bernd.porr@glasgow.ac.uk
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+12pt, % The default document font size, options: 10pt, 11pt, 12pt
+oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+parskip, % Uncomment to add space between paragraphs
+]{article} % The class file specifying the document structure
+
+\usepackage{geometry}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{mathptmx}%%% Use the Times font by default%%%
+
+\usepackage{color}%U can change font color
+
+\usepackage[scaled]{helvet} % helvetica for sanserif, scaled 95% by default
+
+\usepackage{courier}  % for typewriter text
+
+\usepackage{textcomp} % lots of useful symbols
+
+\usepackage{graphicx}  % inclusion of graphics files
+\graphicspath{{figures/}{./}}
+
+\usepackage{hyperref}
+
+\usepackage{wrapfig}   % For better figures
+\usepackage{physics}   %For Partial Derivatives
+\usepackage{amsmath}   % for aligning formulae 
+\usepackage{amssymb}
+\usepackage[rightcaption]{sidecap}
+\usepackage{multicol}
+\usepackage{mathtools,siunitx,array,mleftright}
+
+\usepackage[skip=2pt]{caption}
+\usepackage{subcaption}
+\usepackage{blindtext}
+
+\DeclareCaptionFormat{myformat}{\fontsize{11}{6}\selectfont#1#2#3}
+\captionsetup{format=myformat}
+
+\urlstyle{format=myformat}
+
+
+\newcommand{\thesistitle}{Biologically inspired UAV} % Your thesis title, this is used in the , print it elsewhere with \thesistitle
+\newcommand{\GUID}{2391076M}% Your GUID, this is used in the , print it elsewhere with \GUID
+\newcommand{\student}{Oscar \textsc{Meunier}} % Your name, this is used in the title page and abstract, print it elsewhere with \student
+\newcommand{\firstsupervisor}{\textcolor{red}{\tiny Keep blank before hardcopy submission}} % Your 1st supervisor's name, this is used in the title page, print it elsewhere with \firstsupervisor. YOU NEED TO KEEP BLANK FOR MOODLE SUBMISSION BUT PUT THE NAME BEFORE HARDCOPY SUBMISSION.
+\newcommand{\secondsupervisor} {\textcolor{red}{\tiny Keep blank before hardcopy submission}}% Your 2nd supervisor's name, this is used in the title page, print it elsewhere with \secondsupervisor. YOU NEED TO KEEP BLANK FOR MOODLE SUBMISSION BUT PUT THE NAME BEFORE HARDCOPY SUBMISSION.
+
+%----------------------------------------------------------------------------------------
+%	OTHER INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\newcommand{\degree}{Mechanical Engineering with Aeronautics} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degree
+\newcommand{\subject}{Electric & Electronic Engineering} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subject
+\newcommand{\keywords}{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywords
+\newcommand{\university}{\href{https://www.gla.ac.uk/}{GU}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \university
+\newcommand{\department}{\href{https://www.gla.ac.uk/schools/engineering/}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \department
+
+
+\renewenvironment{abstract}{
+	\section*{Abstract}
+	\bigskip
+	\addcontentsline{toc}{section}{Abstract}}{\clearpage}
+
+\newenvironment{acknowledgement}{
+	\section*{Acknowledgements}
+	\bigskip
+	\addcontentsline{toc}{section}{Acknowledgements}}{\clearpage}
+
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=6em, % Inner margin
+	outer=6em, % Outer margin
+	bindingoffset=0em, % Binding offset
+	top=6em, % Top margin
+	bottom=6em, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black}% Remove read block in the content
+\AtBeginDocument{
+\hypersetup{pdftitle=\thesistitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\student} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywords} % Set the PDF's keywords to your keywords
+}
+
+
+
+\begin{document}
+
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\textsc{\Large Final Year Project Report\\Bachelor of Engineering
+}\\[2cm] % Thesis type
+
+{\huge \bfseries \thesistitle\par}\vspace{3cm}% Thesis title
+
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \huge
+Student:\\
+\vspace*{.02\textheight}
+GUID:\\
+\vspace*{.02\textheight}
+$1^{st}$\, Supervisor:\\
+\vspace*{.02\textheight}
+$2^{nd}$ Supervisor:\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \huge
+\student\\
+\vspace*{.02\textheight}
+\GUID\\
+\vspace*{.02\textheight}
+\firstsupervisor\\
+\vspace*{.02\textheight}
+\secondsupervisor\\
+\end{flushright}
+\end{minipage}\\[3cm]
+
+ 
+\vfill
+
+{\huge 2021-2022}\\[2cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+\end{center}
+\end{titlepage}
+
+
+\pagenumbering{roman}
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+\renewcommand{\arraystretch}{1.3}
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+This Project uses reinforcement learning (RL) to develop flocking behaviour in drones to organise groups of UAVs using biologically inspired behavioural models. This explores how a multi-agent model is simulated and how the loss function can be constructed to achieve emergent behaviour focusing on how the reward function can be scaled with N agents. The model used is an actor-critic model as this allows for continuous action and observation states. The 2D environment is constructed by layering potential field functions and boid flocking behaviour. The agent controls drones using gains that amplify certain behaviours and is trained to maximise long term cumulative reward. The reward function is constructed using variations on the exponential function to flock and arrive within a certain number of steps. 
+As a result, flocking behaviour was achieved and can be scaled although computational resources meant that this was limited. Issues in the behaviour do arise however where some drones fail to arrive at the destination, prioritising flocking. This is most likely due to reward function design as well as some limitations in the simulation. This dissertation demonstrates how reinforcement learning can be used with multi-vehicle UAV applications. By changing the (RL) structure to a more suitable multi-agent particle environment such as the ones available in the openAI database this could be applied at different scales whilst being much more conservative with computational requirements.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgement}
+I would like to express my gratitude to my advisor, Dr Kevin Worrall for providing me with advice and steering me towards information that would prove essential to this dissertation. Dr Worrall has also advised me further and is one of the reasons I have chosen to pursue a MSc of robotics and artificial intelligence at the university of Glasgow.\\
+Dr Dezong Zhao's, my professor for autonomous guided systems has also been an enormous help in creating the model that was used in this dissertation. I would like to thank him for his clear and well-formulated lectures from which I have derived a lot of the code for the simulation.\\
+I would also like to thank Daniel Shiffman, the author of the nature of code, who's  tutorials have been an enormous help in learning how to code multiple agents efficiently.\cite{cod2}\\
+In addition, I would like to thank Dr Lex Fridman, a professor of the university of MIT, who has provided his lectures on deep neural networks for free. \cite{lex1}\\
+
+\end{acknowledgement}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS
+%----------------------------------------------------------------------------------------
+\tableofcontents % Prints the main table of contents
+\pagebreak
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - SECTIONS
+%----------------------------------------------------------------------------------------
+
+\pagestyle{plain} % Return the page headers back to the "thesis" style
+
+\pagenumbering{arabic}
+% Include the sections of the thesis as separate files from the sections folder
+% Uncomment the lines as you write the sections
+
+\include{introduction} 
+
+%body
+\include{guidance}
+\include{rl}
+\include{env}
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+\include{results} 
+\include{conclusion}
+\include{bibliography}
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\include{Appendix}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[heading=bibintoc]
+
+%----------------------------------------------------------------------------------------
+
+\end{document}  
+
