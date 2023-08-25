@@ -35,6 +35,7 @@ This project delves into the intricacies of using reinforcement learning to guid
 | <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Images/TrainedAgent.PNG" width="300"> 
 
 </div>
+
 ## Repository Contents
 
 [Matlab Simulation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/MATLAB): The custom environment and the RL agent.
