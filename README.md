@@ -14,27 +14,29 @@ This project leverages reinforcement learning (RL) to cultivate flocking behavio
 
 This project delves into the intricacies of using reinforcement learning to guide UAVs, drawing inspiration from biological models. The environment is constructed using potential field functions and boid flocking behavior, and the agent learns to control drones by adjusting gains that amplify specific behaviors.
 
-<div align="center">
+## Methods
 
-**Flocking Behaviours**
+### Boid flocking model 
+
+With separation, alignment, and cohesion behaviours.
+
+
+<div align="center">
 
 | Separation | Alignment | Cohesion |
 |:----------------:|:----------------:|:----------------:|
 | <img src="assets/Images/Separation.png" width="200"> | <img src="assets/Images/Alingment.png" width="200"> | <img src="assets/Images/Cohesion.png" width="200"> |
 
+- Utilizing the actor-critic RL model to learn gains that control flocking behavior.
+- Layering potential field and reward functions, shaping to foster flocking and ensure drones reach their destinations.
 
-</div>
-
-<div align=center>
-
-**Simulation**
-
-
-| Rewared Function | Trained agent |
+| Rewared Function | Potential Field  |
 |:----------------:|:----------------:|
-| <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Biologically-Inspired-UAV-TEX/figures/EndByitself.jpg" width="300"> 
+| <img src="assets\Images\RewardFunctionscaled9.jpg" width="300"> | <img src="assets/Images/EndByitself.jpg" width="300"> 
 
 </div>
+
+### Trained Agent
 
 <img src="assets/Images/TrainedAgent.PNG" width="600">
 
@@ -50,14 +52,7 @@ This project delves into the intricacies of using reinforcement learning to guid
 git clone --recursive https://github.com/oscell/Biologically-inspired-UAV.git
 ```
 
-## Methods
 
-The methods employed include:
-
-- Layering potential field functions for attraction to destinations.
-- Incorporating the boid flocking model with separation, alignment, and cohesion behaviors.
-- Utilizing the actor-critic RL model to learn gains that control flocking behavior.
-- Designing a custom environment and reward shaping to foster flocking and ensure drones reach their destinations.
 
 ## Results
 
