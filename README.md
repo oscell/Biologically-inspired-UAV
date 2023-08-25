@@ -16,9 +16,10 @@ This project delves into the intricacies of using reinforcement learning to guid
 
 ## Methods
 
-### Boid flocking model 
+The methods employed include:
 
-With separation, alignment, and cohesion behaviours.
+
+- Incorporating the boid flocking model with separation, alignment, and cohesion behaviors.
 
 
 <div align="center">
@@ -28,7 +29,8 @@ With separation, alignment, and cohesion behaviours.
 | <img src="assets/Images/Separation.png" width="200"> | <img src="assets/Images/Alingment.png" width="200"> | <img src="assets/Images/Cohesion.png" width="200"> |
 
 - Utilizing the actor-critic RL model to learn gains that control flocking behavior.
-- Layering potential field and reward functions, shaping to foster flocking and ensure drones reach their destinations.
+- Layering potential field functions for attraction to destinations.
+- Designing a custom environment and reward shaping to foster flocking and ensure drones reach their destinations.
 
 | Rewared Function | Potential Field  |
 |:----------------:|:----------------:|
