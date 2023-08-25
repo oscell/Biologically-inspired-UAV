@@ -29,6 +29,10 @@ This project delves into the intricacies of using reinforcement learning to guid
 
 <img src="assets\Images\RewardFunctionscaled9.jpg" width="400">
 
+## Repository Contents
+[Matlab Simulation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/MATLAB): The custom environment and the RL agent.
+
+[Dissertation](https://github.com/oscell/Biologically-inspired-UAV/blob/main/assets/Documents/Biologically_inspired_UAV.pdf): The primary document detailing the research, methodology, and findings.
 ## Setup & Installation
 
 ```bash
