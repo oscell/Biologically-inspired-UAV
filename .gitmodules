@@ -1,0 +1,6 @@
+[submodule "assets"]
+	path = assets
+	url = https://github.com/oscell/Biologically-Inspired-UAV-TEX.git
+[submodule "assets_submodule"]
+	path = assets_submodule
+	url = https://github.com/oscell/Biologically-Inspired-UAV-TEX.git
