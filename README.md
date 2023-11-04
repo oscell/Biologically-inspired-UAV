@@ -1,6 +1,6 @@
 # Biologically Inspired UAV Guidance Using Reinforcement Learning
 
-## Abstract
+## Overview
 
 This project uses reinforcement learning (RL) with actor-critic model to instill flocking behaviour in drones based on biological models. This involved: 
 
@@ -17,9 +17,6 @@ This work highlights RL's promise in UAV systems and suggests transitioning to a
 
 </div>
 
-## Overview
-
-This project delves into the intricacies of using reinforcement learning to guide UAVs, drawing inspiration from biological models. The environment is constructed using potential field functions and boid flocking behavior, and the agent learns to control drones by adjusting gains that amplify specific behaviors.
 
 ## Methods
 
