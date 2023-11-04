@@ -2,7 +2,14 @@
 
 ## Abstract
 
-This project uses reinforcement learning (RL) to instill flocking behaviour in drones based on biological models. We focus on simulating multi-agent systems, formulating an effective loss function, and scaling the reward function for N agents. The actor-critic model is chosen for its ability to manage continuous actions and observations. The 2D environment incorporates potential field functions and boid flocking behavior. Drones are directed through gains that boost specific behaviours, with the goal to maximize long-term rewards. The reward function uses exponential variations to ensure flocking within set steps. Although successful in achieving flocking, computational limitations exist and some drones may prioritize flocking over their destination. This work highlights RL's promise in UAV systems and suggests transitioning to a more scalable multi-agent environment, like those in the OpenAI database, to reduce computational needs.
+This project uses reinforcement learning (RL) with actor-critic model to instill flocking behaviour in drones based on biological models. This involved: 
+
+- Developing a simulation of multi-agent systems in an environment  that incorporates potential field functions and boid flocking behavior.
+- Formulating an effective loss function
+- Designing a  custom reward function that uses exponential variations to ensure flocking within set steps
+- Drones are directed through gains that boost specific behaviours, with the goal to maximize long-term rewards. 
+
+This work highlights RL's promise in UAV systems and suggests transitioning to a more scalable multi-agent environment.
 
 <div align="center">
 
